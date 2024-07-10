@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 const AdminReg = () => {
   const [fullname, setfullname] = useState("");
   const [email, setemail] = useState("");
+  // const [bankName, setbankName] = useState(second)
   const [bankCode, setBankCode] = useState("");
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
@@ -20,15 +21,18 @@ const AdminReg = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
+
       if (password != confirmPassword) {
         return toast.error("Password does not match");
       }
 
-      const res = await axiosInstance.post("/user/register", {
+      const res = await axiosInstance.post("/admin/register", {
         fullname,
         email,
+        bankName: "GTB",
         bankCode,
         password,
         accountNumber,
@@ -36,9 +40,8 @@ const AdminReg = () => {
 
       const data = res.data;
       setUser(data);
-      console.log(data);
+      // console.log(data);
       navigate("/admin-dashboard");
-      setIsSubmitting(true);
     } catch (err) {
       console.error(err);
     } finally {

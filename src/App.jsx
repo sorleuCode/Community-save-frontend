@@ -16,6 +16,7 @@ import ContributionList from './components/Dashboard/ContributionList'
 import EditProfile from './components/Dashboard/EditProfile'
 import UserReg from './components/Auth/UserReg'
 import ContributionManager from './components/AdminDashboard/ContributionManager'
+import AdminLogin from './components/Auth/AdminLogin'
 
 const App = () => {
   return (
@@ -23,9 +24,9 @@ const App = () => {
 
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/adminReg" element={<AdminReg />} />
-        <Route path="/user-reg" element={<UserReg />} />
+        <Route path="/register" element={<UserReg />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/admindash" element={<AdminDashboard />} /> */}
@@ -36,14 +37,14 @@ const App = () => {
         <Route path="/about" element={<About/>} />
           <Route path="/blog" element={<BlogPage/>} />
           <Route path="/login" element={<Login/>} />
-          {/* <Route path="/register" element={<Register/>} /> */}
+          <Route path="/register" element={<UserReg/>} />
           <Route path="/dashboard" element={<DashboardPage/>} />
           <Route path="/" element={<Login/>} />
           <Route path="/PaymentHistory" element={<PaymentHistory/>} />
           <Route path="/editProfile" element={<EditProfile/>} />
           <Route path="/Contribution" element={<ContributionList/>}/>
           <Route path="/admin/contributionlist" element={<ContributionManager/>}/>
-          {/* <Route path="/register" element={<AdminReg/>}/> */}
+          <Route path="/admin/register" element={<AdminReg/>}/>
 
 
         {/* Add more routes as needed */}

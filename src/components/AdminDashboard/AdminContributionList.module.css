@@ -1,0 +1,104 @@
+.ContributionList {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .bodeleyi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;}
+  
+  /* .bodeleyi{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  
+  } */
+  
+  .contribution_list {
+    max-width: 1200px; /* Increased max-width for wider display */
+    margin: 0 auto;
+    padding: 20px;
+  
+  
+  
+    background-color: #f8f9fa;
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } 
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contribution_list h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .back_button {
+    display: flex;
+    align-items: center;
+    color: #3be31d !important;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .back_button:hover {
+    color: #0056b3 !important;
+  }
+  
+  .contribution_list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+  }
+  
+  .contribution_item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    flex: 1 1 calc(33.333% - 40px); /* Three columns with space between */
+    max-width: calc(33.333% - 40px);
+  }
+  
+  .contribution_item strong {
+    color: #20bc05;
+    
+  }
+  
+  .contribution_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contribution_item p {
+    margin: 0;
+    color: #1f15e0;
+    font-size: 26px;
+  }
+  
+  .contribution_item .contribution_title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .contribution_item .contribution_details {
+    font-size: 16px;
+    color: #555;
+  }

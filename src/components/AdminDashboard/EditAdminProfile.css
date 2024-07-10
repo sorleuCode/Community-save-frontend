@@ -1,0 +1,110 @@
+.theway{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  
+  .form_edit_profile{
+    width:535px;
+    max-width: 344px;
+    /* background-color: #342ea4; */
+  }
+
+  .edit_profile {
+    max-width: 400px;
+    width: 645px;
+    padding: 50px;
+    /* border: 1px solid #ccc; */
+    /* background-color: #932929; */
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit_profile form {
+    width: 100%;
+  }
+  
+  .edit_profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .edit_profile form div {
+    margin-bottom: 15px;
+  }
+  
+  .edit_profile label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .edit_profile input,
+  .edit_profile textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .edit_profile textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+ .eef_profile_edit {
+    width: 100%;
+    padding: 10px;
+    background-color: #40c211;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit_profile button:hover {
+    background-color: #38c98a;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgba(0,0,0,0.4); */
+  }
+  
+  .modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

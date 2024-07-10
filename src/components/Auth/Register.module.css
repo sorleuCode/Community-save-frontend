@@ -1,0 +1,76 @@
+
+  
+   .container_reg {
+    max-width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  } 
+/* 
+  .label {
+    color: #121417;
+    font-family: "Inter", "sans-serif";
+    font-size: 14px;
+    font-weight: 500;
+  } */
+
+  .password{
+     font-size: 20px;
+    color: black;
+    
+  }
+
+  
+   .in_put {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #D7E1F4;
+    border-radius: 4px;
+    font-size: 17px;
+    
+  } 
+ 
+  
+  .btn {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #0EAD69;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #accf21;
+  }
+  
+  .login{
+    text-decoration: none;
+    color: black;
+   
+  }
+  .login_account{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+
+  }
+
+  .user{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 90px;
+  }

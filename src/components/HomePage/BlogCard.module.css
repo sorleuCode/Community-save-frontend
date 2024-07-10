@@ -1,0 +1,88 @@
+.ekuileo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width:315px; */
+    align-items: center;
+    background-color: #f4f4f4;
+  /* margin-left: 1rem; */
+  }
+  
+  .chelsea{
+    max-width:315px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .blog_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; 
+    height: 95%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    /* margin-left: 8rem; */
+  
+  }
+  
+  /* .blog-card:hover {
+    transform: translateY(-5px);
+  } */
+  
+  .image {
+    width: 100%;
+    height: 197px; 
+    object-fit: cover;
+  }
+  
+  
+  
+  .title {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .text {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+    color: #666;
+    justify-content: center;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .text_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Added margin to space out the text from the date/author */
+  }
+  
+  .eef {
+    font-size: 0.8em;
+    color: #999;
+  }
+  
+  .date {
+    font-size: 1.2em;
+    color: #999;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .author {
+    font-size: 0.8em;
+    color: #27ae60;
+    text-align: right;
+    margin-left: 90px;
+    margin-right: 12px;
+  }

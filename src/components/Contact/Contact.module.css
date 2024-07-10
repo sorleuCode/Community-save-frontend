@@ -1,0 +1,251 @@
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    margin: 4rem auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 22px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color:#27ae60;
+  }
+  
+  /* label {
+    display: block;
+    margin-bottom: 31px;
+  }
+   */
+  .send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .contacted_text {
+    max-width: 50%;
+    width: 40%; 
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+  
+  .contact_input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    margin: 1rem;
+    max-width: 600px;
+    
+  
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contact_textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 24px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    max-width: 600px;
+  }
+  
+ 
+  .bttn {
+    background-color:#000;
+    color: #fff;
+    padding: 14px 35px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bttn:hover {
+    transform: translateX(2px);
+    animation: hover-animation 0.6s ease-in-out infinite;
+    color: white;
+    background-color: #02ff9a;
+    z-index: 1;
+  }
+  
+ 
+  
+  .btn:hover::before {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    transform: scaleY(1);
+    animation: hover-animation 0.6s ease-in-out infinite;
+  }
+
+  
+  
+  @keyframes hover-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (min-width: 701px) and (max-width: 990px) {
+    .contact_form {
+      max-width: 540px;
+      margin: 4rem auto;
+      /* background-color: red; */
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 700px) {
+    .contact_form {
+      max-width: 420px;
+      margin: 4rem auto;
+      background-color: rgb(64, 255, 0);
+    }
+  }
+  @media (min-width: 464px) and (max-width: 576px) {
+    .contact_form {
+      max-width: 320px;
+      margin: 4rem auto;
+      background-color: rgb(0, 47, 255);
+    }
+  
+    ::placeholder{
+      font-size: 18px;
+  }
+  }
+  
+  @media (min-width: 357px) and (max-width: 465px) {
+    .contact_form {
+      max-width: 220px;
+      margin: 4rem auto;
+      background-color: rgb(255, 0, 0);
+    }
+  
+    ::placeholder {
+      font-size: 14px;
+    }
+  
+    textarea {
+      width: 100%;
+      height: 150px;
+      font-size: 16px;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%;
+      height: 42px;
+      font-size: 16px;
+    }
+  
+    .bttn {
+      padding: 11px 27px;
+      font-size: 10px;
+      margin-left: -.1rem;
+    }
+  
+    .send {
+      font-size: 30px;
+    }
+  }
+  
+  /* @media (min-width: 264px) and (max-width: 356px) {
+    .contact_form {
+      max-width: 170px;
+      padding-right: 5rem;
+      background-color: rgb(100, 125, 41);
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      height: 42px;
+      width: 300%;
+      position: relative;
+      right: 1rem;
+  
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    ::placeholder {
+      font-size: 14px;
+    }
+    .bttn {
+      padding: 11px 27px;
+      margin-left: 2.3rem;
+      font-size: 14px;
+    }
+  
+    textarea {
+      width: 211px;
+      height: 100px;
+      position: relative;
+      right: 1rem;
+  
+      font-size: 14px;
+    }
+    .bttn {
+      padding: 11px 36px;
+      font-size: 14px;
+    }
+  } */
+  
+  @media (min-width: 264px) and (max-width: 356px) {
+    form {
+      max-width: 200px; /* Adjust the maximum width of the form */
+      margin: 4rem auto; /* Adjust the margin */
+      background-color: rgb(255, 0, 0); /* Change background color */
+    }
+  
+    ::placeholder {
+      font-size: 14px; /* Adjust the font size of placeholder text */
+    }
+  
+    textarea {
+      width: 100%; /* Make textarea full width */
+      height: 150px; /* Set the height of textarea */
+      font-size: 16px; /* Adjust the font size */
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%; /* Make input fields full width */
+      height: 42px; /* Set the height of input fields */
+      font-size: 16px; /* Adjust the font size */
+    }
+  
+    .bttn {
+      padding: 11px 27px; /* Adjust the padding of the button */
+      font-size: 10px; /* Adjust the font size of the button text */
+      margin-left: -.1rem; /* Adjust the left margin of the button */
+    }
+  
+    .send {
+      font-size: 30px; /* Adjust the font size of the send class */
+  }
+  }

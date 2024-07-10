@@ -1,0 +1,27 @@
+/* .ContributionCard.css  */
+.contribution_card {
+    background-color: #ff0303;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .class{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contribution_card:hover {
+    transform: scale(1.05);
+  }
+  
+  .contribution_card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .contribution_card p {
+    margin: 8px 0;
+    color: #666;
+  }
